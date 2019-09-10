@@ -14,8 +14,7 @@ public class GetRepositories {
 	public static void main(String[] args) throws IOException {
 		final String userName = "bharanikumar2007";
 		RepositoryService repService = new RepositoryService();
-		repService.getClient().setCredentials("bharanikumar2007", "karuna@143");
-		for (Repository repo : repService.getRepositories())
+		for (Repository repo : repService.getRepositories(userName))
 			System.out.println(repo.getName() + " @" + repo.getCreatedAt());
 	}
 }
