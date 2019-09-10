@@ -1,2 +1,2 @@
 # test
-test repo
+test repo to get the repositories
